@@ -1,17 +1,18 @@
-# Alias command (seta) lets you set aliases quickly.
-# Syntax  : seta <NAME OF THE ALIAS> <COMMAND>
-# Example : seta goodlist "ls -l"
+# Alias set command (aset) lets you set aliases quickly.
+# Syntax  : aset <NAME OF THE ALIAS> <COMMAND>
+# Example : aset goodlist "ls -l"
 # Simple. No need to reload shell. All set to use your new command "goodlist"
 
 # How to install.
 # Run this command in your shell.
-echo "function seta() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
+echo "function aset() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
 
 # few cool aliases I have set using this tool ;). Setting aliases can be highly addictive.
 #
-# seta gl='git log --graph --all --oneline --decorate'
-# seta gh='git checkout'
-# seta gc='git commit'
-# seta gp='git push'
-# seta gm='git merge'
-# seta gs='git status'
+# aset gl "git log --graph --all --oneline --decorate"
+# aset gh "git checkout"
+# aset gc "git commit"
+# aset gp "git push"
+# aset gu "git pull"
+# aset gm "git merge"
+# aset gs "git status"
