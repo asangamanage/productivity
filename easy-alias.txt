@@ -6,3 +6,12 @@
 # How to install.
 # Run this command in your shell.
 echo "function seta() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
+
+# few cool aliases I have set using this tool ;). Setting aliases can be highly addictive.
+#
+# seta gl='git log --graph --all --oneline --decorate'
+# seta gh='git checkout'
+# seta gc='git commit'
+# seta gp='git push'
+# seta gm='git merge'
+# seta gs='git status'
