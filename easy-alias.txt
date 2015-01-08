@@ -4,5 +4,11 @@
 # Simple. No need to reload shell. All set to use your new command "goodlist"
 
 # How to install.
-# Run this command in your shell.
+
+# 1) Easy way. Run this command in your shell.
+
 echo "function seta() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
+
+# 2) Manual way. Add following to your ~/bash_profile
+
+function seta() { echo "alias $1='$2'" >> ~/.bash_profile;source ~/.bash_profile;}
