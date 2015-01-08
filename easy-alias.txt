@@ -1,0 +1,9 @@
+# Alias command (seta) lets you set aliases quickly.
+# Syntax  : seta <NAME OF THE ALIAS> <COMMAND>
+# Example : seta goodlist "ls -l"
+# Simple. No need to reload shell. All set to use your new command "goodlist"
+
+# How to install.
+# Run this command in your shell.
+
+echo "function seta() { echo "alias $1='$2'" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
