@@ -5,5 +5,4 @@
 
 # How to install.
 # Run this command in your shell.
-
-echo "function seta() { echo "alias $1='$2'" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
+echo "function seta() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
