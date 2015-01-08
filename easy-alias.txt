@@ -4,11 +4,14 @@
 # Simple. No need to reload shell. All set to use your new command "goodlist"
 
 # How to install.
+# 1) Easy way. Run this command in your shell.
 # Run this command in your shell.
 echo "function aset() { echo "\"alias \$1="'\$2'"\"" >> ~/.bash_profile;source ~/.bash_profile;}" >> ~/.bash_profile; source ~/.bash_profile
+# 2) Manual way. Add following to your ~/bash_profile
+function seta() { echo "alias $1='$2'" >> ~/.bash_profile;source ~/.bash_profile;}
 
 # few cool aliases I have set using this tool ;). Setting aliases can be highly addictive.
-#
+
 # aset gl "git log --graph --all --oneline --decorate"
 # aset gh "git checkout"
 # aset gc "git commit"
